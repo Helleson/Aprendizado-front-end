@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de testes</title>
+    <style>
+        body{
+            font: normal 18pt arial;
+        }
+        input{
+            font: normal 18pt arial;
+            width: 100px;
+
+        }
+        div#cal{
+            margin-top: 20px;
+            color: brown;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; " 
+    >Veja se você esta saudavel</h1>
+    <p style="color:blue ">Insira seu peso e em seguida sua altura:</p>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="imc" onclick="imc()">
+    <div id="cal" >resultado</div>
+    <div id="res"> outra </div>
+    
+    </div>
+    
+
+
+    <script>
+        function imc() {
+        var tn1 = window.document.getElementById('txtn1')
+        var tn2 = window.document.getElementById('txtn2')
+        var cal = window.document.getElementById('cal')
+        var res =  window.document.getElementById('res')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var imc = (n1/(n2**2))
+        var num = (n1/(n2**2))<=25?'Parabéns, você esta saudavel!!!': 'você esta a cima do peso, tente fazer exercicios.'
+        cal.innerHTML= `Seu IMC é ${imc}`
+        res.innerHTML= num
+        
+        }
+       4
+        
+
+
+
+
+
+
+
+
+
+
+        //var peso = window.prompt('insira seu peso:')
+        //var altura = window.prompt//('insira sua altura')
+        //var imc = (`${peso/(altura**2)}`)
+        //window.document.write(`Seu imc //é ${imc}`)
+    </script>
+</body>
+</html>
