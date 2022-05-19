@@ -1,5 +1,5 @@
 body{
-    background: rgb(70, 142, 236);
+    background: rgb(158, 5, 5);
     font: normal 15pt arial;
    
 
@@ -11,7 +11,7 @@ color: #160303;
 text-align: left;
 d
 background-size: 100%;
- background-image:url("capa.png");
+ background-image:url("capa.jpg");
  background-size: cover;
 
 border: 10px;
