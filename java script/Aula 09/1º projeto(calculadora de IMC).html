@@ -5,75 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de testes</title>
-    <style>
-        body{
-            font: normal 18pt arial;
-        }
-        input{
-            font: normal 18pt arial;
-            width: 100px;
-
-        }
-        div#cal{
-            margin-top: 20px;
-            color: brown;
-            
-        }
+    <link rel="stylesheet" href="style.css">
+   
     </style>
 </head>
 <body>
     <h1 style="text-align: center; " 
     >Veja se você esta saudavel</h1>
-    <p style="color:blue ">Insira suas medidas:</p>
-    Peso<input type="number" name="txtn1" id="txtn1">
-    Altura<input type="number" name="txtn2" id="txtn2">
-    <input type="button" value=" imc" onclick="imc()">
-    <div id="cal" ></div>
-    <div id="res">  </div>
+    <p>Insira suas medidas:</p>
+    <section>
+        <strong>Peso:</strong> <input type="number" name="txtn1" id="txtn1">
+        <strong>Altura:</strong> <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value=" imc" onclick="imc()">
+        <div id="cal" ></div>
+        <div id="res">  </div>
+        
+        </div>
+    </section>
+    <script src="script.js"></script>
     
-    </div>
+
+
     
-
-
-    <script>
-        function imc() {
-        var tn1 = window.document.getElementById('txtn1')
-        var tn2 = window.document.getElementById('txtn2')
-        var cal = window.document.getElementById('cal')
-        var res =  window.document.getElementById('res')
-        var n1 = Number(tn1.value)
-        var n2 = Number(tn2.value)
-        var imc = (n1/(n2**2))
-        var num = (n1/(n2**2))//<=25?'Parabéns, você esta saudavel!!!': 'você esta a cima do peso, tente fazer exercicios.'
-        res.innerHTML = 'Você esta saudavel'
-        cal.innerHTML= `Seu IMC é ${imc}`
-        if(num<=25 && num > 14){
-            //cal.innerHTML += 'Você esta saudavel'
-            res.innerHTML= 'você esta saudavel'
-        }else{
-            res.innerHTML = 'Voce esta fora do seu peso ideal procuere um nutricionista'
-        }
-
-        
-       
-        
-        }
-       
-        
-
-
-
-
-
-
-
-
-
-
-        //var peso = window.prompt('insira seu peso:')
-        //var altura = window.prompt//('insira sua altura')
-        //var imc = (`${peso/(altura**2)}`)
-        //window.document.write(`Seu imc //é ${imc}`)
-    </script>
 </body>
 </html>

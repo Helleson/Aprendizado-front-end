@@ -1,0 +1,44 @@
+h1{
+    font: normal 30pt arial;
+    
+}
+input{
+    font: normal 18pt arial;
+    width: 100px;
+
+}
+div#cal{
+    margin-top: 20px;
+    color: brown;
+    
+}
+p{
+    color:blue;
+    font: normal 30px times;
+    padding: 10px;
+    font-weight: bold;
+}
+input{
+    color: rgb(0, 0, 0);
+    background: rgb(163, 118, 118);
+    font-weight: bold;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.404);
+}
+section{
+    color: rgb(12, 1, 22);
+    font: normal 30px arial  ;
+       font-weight: bold;
+    
+}
+div#cal{
+    background: #d8c9c9;
+    text-align: center;
+    color: rgb(10, 53, 53);
+}
+div#res{
+    padding: 12px;
+    text-align: center;
+    
+   
+    
+}
