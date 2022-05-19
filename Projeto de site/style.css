@@ -7,7 +7,7 @@ body{
 header{
 height: max-content;
 line-height: 300px;    
-color: #160303;
+color: rgb(23, 5, 63);
 text-align: left;
 d
 background-size: 100%;
@@ -29,4 +29,8 @@ footer{
 text-align: center;
 color: white;
 font-style: italic;
+}
+
+    
+
 }
