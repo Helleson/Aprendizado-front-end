@@ -10,16 +10,17 @@ function contar(){
         res.innerHTML = 'Impossivel contar!'
     }else if(n3<=0){
         alert('Passo Inválido! Considerando passo 1')
+        n3 += 1
                 
     }
     else{
-        res.innerHTML = "contando: "
+        res.innerHTML = "contando: <br>"
         if(n1 < n2 ){
             //contagem crescente
     for(var c = n1; c <= n2; c+=n3){
         res.innerHTML+= `${c} \u{1F449} `
         }
-    res.innerHTML+= `\u{1F3C1}`
+    //res.innerHTML+= `\u{1F3C1}`
     }else{
         //contagem regressiva
         for(var c = n1; c >= n2; c-=n3)
