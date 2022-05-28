@@ -10,7 +10,7 @@ function conta(){
    while (c<=10) {
        let item = document.createElement('option')
        item.text = `${n} x ${c} = ${n*c}`
-       item.value = `tab${c}`ASD1
+       item.value = `tab${c}`
        tab.appendChild(item)
        c++
    }
