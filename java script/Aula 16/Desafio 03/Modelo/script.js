@@ -44,6 +44,17 @@
            window.alert('adicione valores antes de finalizar!')
        }else{
            let tot = valores.length
+           let maior = valores[0]
+           let menor = valores[0]
+           for(let pos in valores){
+               if(valores[pos] > maior){
+                   maior = valores[pos]
+                }if(valores[pos]< menor){
+                    menor = valoroes[pos]
+
+                }
+           }
+
            
            res.innerHTML = ''
            res.innerHTML+= `<p>Ao todos temos ${tot} numeros cadastrados </p>`
