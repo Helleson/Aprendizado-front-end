@@ -27,32 +27,75 @@
        valores.push(Number(num.value))
        let n = Number(num.value)
        let item = document.createElement('option')
-       item.text = `Valor ${n} adicionado `
-       item.value = `lis${n}`
+       item.text = `Valor ${num.value} adicionado `
+       
        lista.appendChild(item)
+       res.innerHTML= ''
       
 
        }else{
            window.alert('Valor inválido ou ja encontrado na lista.')
        }
+       num.value = ''
+       num.focus()
    }
    function final(){
-       let num = document.getElementById('num')
-       let n = Number(num.value)
+       if(valores.length == 0){
+           window.alert('adicione valores antes de finalizar!')
+       }else{
+           let tot = valores.length
+           
+           res.innerHTML = ''
+           res.innerHTML+= `<p>Ao todos temos ${tot} numeros cadastrados </p>`
+       }
+
+
+   }
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+      /* let num = document.getElementById('num')
+       
+       
        let res = document.getElementById('res')  
        let kel = document.getElementById('kel')  
        res.innerHTML = `Ao todo temos ${valores.length} números cadastrados.`
        
  
-        kel.innerHTML = `O maior valor informado foi ${max.valores}`
-`
+        kel.innerHTML = `O maior valor informado foi ${valores[valores.length - 1]}`
+
        
         
         
         
         
 
-   }
+   }*/
 
     
 
